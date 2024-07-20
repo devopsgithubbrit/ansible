@@ -1,11 +1,11 @@
 - name : install and run nginx
   hosts: web
   become: yes
-  - name : install nginx
+    - name : install nginx
     ansible.bultin.package
     name: nginx
     state: present
-  - name : run nginx
+    - name : run nginx
     ansible.bultin.service
     name: nginx
     state: started
