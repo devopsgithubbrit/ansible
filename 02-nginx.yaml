@@ -5,7 +5,7 @@
     ansible.bultin.package
     name: nginx
     state: present
-    - name : run nginx
+    - name: run nginx
     ansible.bultin.service
     name: nginx
     state: started
